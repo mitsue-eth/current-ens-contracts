@@ -10,6 +10,7 @@
     "hardhat": "^2.11.2"
   },
   "dependencies": {
+    "@ensdomains/eth-ens-namehash": "^2.0.15",
     "solidity-coverage": "latest"
   }
 }
