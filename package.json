@@ -10,7 +10,10 @@
     "hardhat": "^2.11.2"
   },
   "dependencies": {
+    "@ensdomains/ens-contracts": "^0.0.12",
     "@ensdomains/eth-ens-namehash": "^2.0.15",
+    "dotenv": "^16.0.2",
+    "graphql-request": "^5.0.0",
     "solidity-coverage": "latest"
   }
 }

@@ -4,8 +4,8 @@ const utils = ethers.utils;
 const namehash = require("@ensdomains/eth-ens-namehash");
 
 const stringToNormalize = "MITsue.eth";
-const stringToNamehash = "mitsue.eth";
-const labelForTokenId = "vitalik";
+const stringToNamehash = "eth";
+const labelForTokenId = "mitsue";
 
 //normalize NameHash
 const normalized = namehash.normalize(stringToNormalize);
