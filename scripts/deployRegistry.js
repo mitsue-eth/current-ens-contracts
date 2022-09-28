@@ -1,6 +1,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
+  //general information about deployment into Hardhat network
   const [deployer] = await ethers.getSigners();
   const signers = await ethers.getSigners();
   for (i = 0; i < signers.length; i++) {
@@ -11,10 +12,13 @@ async function main() {
     );
   }
 
+  //Deploy ENS registry and resolver
+  const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
   const ENSRegistry = await ethers.getContractFactory("ENSRegistry");
   const deployedENSRegistry = await ENSRegistry.deploy();
-
   await deployedENSRegistry.deployed();
+
+  const PublicResolver = await ethers.getContractFactory("PublicResolver");
 
   console.log(
     "ENS Registry deployed to the following address: ",
